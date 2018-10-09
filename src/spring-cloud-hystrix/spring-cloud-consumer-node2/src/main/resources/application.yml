@@ -1,9 +1,9 @@
 spring:
   application:
-    name: spring-cloud-hystrix-dashboard
+    name: node2
 
 server:
-  port: 2000
+  port: 3002
 
 feign:
   hystrix:

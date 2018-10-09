@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-cloud-hystrix-turbine
+
+server:
+  port: 2001
+
+turbine.appConfig: node1,node2,spring-cloud-hystrix-dashboard,spring-cloud-hystrix-dashboard2
+turbine.aggregator.clusterConfig: default
+turbine.clusterNameExpression: new String("default")
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/
